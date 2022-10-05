@@ -80,3 +80,33 @@ function Date_value(D1){
   }
   return D3;
 }
+
+//Adding test cases
+console.log("first test case :")
+var D1 = {
+    "2020-01-01": 4,
+    "2020-01-02": 4,
+    "2020-01-03": 6,
+    "2020-01-04": 8,
+    "2020-01-05": 2,
+    "2020-01-06": -6,
+    "2020-01-07": 2,
+    "2020-01-08": -2,
+    
+  };
+let D2= Date_value(D1);
+for(var key in D2){
+    console.log(key +" : "+ D2[key]);
+}
+console.log("second test case :")
+var D3= {
+    "2020-01-01": 6,
+    "2020-01-04": 12,
+    "2020-01-05": 14,
+    "2020-01-06": 2,
+    "2020-01-07": 4
+  };
+let D4= Date_value(D3);
+for(var key in D4){
+    console.log(key +" : "+ D4[key]);
+}
